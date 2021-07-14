@@ -1,0 +1,351 @@
+/*-------Body style-----*/
+
+body{
+    margin: 0;
+    padding: 0;
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    font-family: 'Poppins', sans-serif;
+    width: 1296px;
+}
+/*------Top container and Annimation style------*/
+.top-container{
+    height: 609.3px;
+    display: flex;
+    background-color: rgb(73, 73, 163);
+}
+.top-container:hover .top-banner img{
+    transform: rotate(60deg);
+    transition: transform 1s linear;
+    width: 400px;
+    height: 300px;
+}
+.top-text{
+    font-weight: 700;
+    width: 436.5px;
+    height: 207px;
+
+    margin-left: 140.4px;
+    margin-top: 186.3px;
+    font-size: 48px;
+    color: #FFFFFF;
+
+}
+.top-text h3{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+.top-banner img{
+    width: 500.49px;
+    height: 394.2px;
+    margin-top: 137.7px;
+    padding-left: 91.8px;
+}
+.top-text .watch-button{
+    width: 151.2px;
+    height: 39.6px;
+    background-image: linear-gradient(orange,red) ;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 20px;
+}
+.top-text .watch-button p {
+    padding: 11px 25px;
+}
+.top-text .watch-button p a{
+    text-decoration: none;
+    color:#FFFFFF ;
+}
+.fa, .fas {
+    margin-left: 10px;
+}
+/*------------players section style---------*/
+.players{ 
+    width: 945px;;  
+     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    grid-row-gap: 24.3px;
+    grid-column-gap: 27px ;
+    margin-left: 162px;
+    margin-top: 63px;
+    
+}
+   
+.player{
+    box-shadow: 0 0 40px 0 gray;
+    width: 297px;
+    height: 426.6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.player p{
+    font-size: 16px;
+}
+.player h4{
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 14.4px;
+    margin-bottom: 9px;
+}
+.player img, .player-details{
+    width: 270px;
+    height: 230.4;
+}
+/*-----score section style----------*/
+.scor{
+    background-color:lightgrey;
+    height: 350px;
+}
+.top-scor{
+    
+
+    justify-items: center;
+    margin-left: 185px;
+    margin-top: 70px;
+    
+    
+    
+
+}
+.top-scor  table {
+    border-collapse: collapse;
+    width: 900px;
+    font-weight: 700;
+    height: 200px;
+
+}
+
+.top-scor table td {
+    border: 2px solid rgb(12, 73, 82);
+    padding: 0px 10px;
+}
+
+.top-scor table th {
+    border: 2px solid rgb(12, 73, 82);
+    padding: 0px 10px;
+    font-size: 20px;
+    
+}
+.top-scor h2{
+    padding-top: 20px;
+    margin-left: 365px;
+    color:brown;
+}
+/*-------Final match style-------*/
+.final{
+    display: flex;
+    width: 945spx;
+    height: 400px;
+    margin-left: 185px;
+    margin-top: 60px;
+    padding-top: 40px;
+    
+}
+
+
+.final-img img{
+    height: 300px;
+    border-radius: 20px;
+}
+.final-details{
+    margin-left: 60px;
+    width: 300px
+    
+}
+.final-details span{
+    
+    width: 151.2px;
+    height: 39.6px;
+    background-image: linear-gradient(orange,red) ;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 11px 25px;
+    border-radius: 20px;
+
+
+}
+.final-details span a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.final-content{
+    background-color:lightyellow;
+}
+/*-----logo Style-------*/
+.bottom-content{
+    width: 435.4px;
+    height: 191.7px;
+    margin-left: 475px;
+    margin-top: 30px;
+}
+
+.logo img{
+    width: 435.4px;
+    height: 99px;
+}
+ .icon{
+        padding-left: 200px;
+ }
+.copyright{
+        padding-left: 150px;
+        font-size: 18px;
+}
+/*........Media query........*/
+/*------Mobile Devices----------*/
+
+@media only screen and (max-width:688px) {
+
+    body{
+        width: 360px;
+    }
+    
+    .top-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: 760px;
+        width: 360px;
+    }
+    .top-text{
+        width: 278px;
+        height: 138px;
+        margin-left: 16px;
+        margin-top: 112px;
+        font-size: 36px;
+        color: #FFFFFF;
+    }
+    .top-text .watch-button{
+        padding-left: 19px;
+        padding-top: 0px;
+        width: 151.2px;
+        height: 39.6px;
+        background-image: linear-gradient(orange,red);
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .top-banner img{
+        width: 329px;
+        height: 268px;
+        margin-top: 50px;
+        padding-left: 15px;
+    }
+    .players{
+        width: 360px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        grid-row-gap: 24.3px;
+        grid-column-gap: 27px;
+        margin-left: 2px;
+        margin-top: 63px;
+        margin-right: 15px;
+    }
+    .player{
+        box-shadow: 0 0 40px 0 gray;
+        width: 330px;
+        height: 426.6px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .scor{
+        width: 360px;
+        background-color:lightgrey;
+        height: 350px;
+    }
+    .top-scor{
+        
+    justify-items: center;
+        
+    margin-left: 15px;
+        
+    margin-top: 70px;
+    }
+    .top-scor  table {
+        border-collapse: collapse;
+        width: 333px;
+        font-weight: 700;
+        height: 200px;
+    }
+    
+    .top-scor table td {
+        border: 2px solid rgb(12, 73, 82);
+        padding: 0px 10px;
+    }
+    
+    .top-scor table th {
+        border: 2px solid rgb(12, 73, 82);
+        padding: 0px 10px;
+        font-size: 20px;
+        
+    }
+    .top-scor h2{
+        padding-top: 20px;
+        margin-left: 87px;
+        color:brown;
+    }
+    .final-content{
+        width: 360px;
+    }
+    .final{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        height: 400px;
+        margin-left: 15px;
+        margin-top: 60px;
+        padding-top: 40px;
+        
+    }
+    .final-img img{
+        width: 330px;
+    }
+    .final-details{
+        margin-left: 30px;
+        width: 300px}
+ .bottom-content{
+            width: 360px;
+            height: 191.7px;
+            margin-left: 15px;
+            margin-top: 30px;
+        }
+.logo-section{
+    width: 360px;
+}
+.bottom-content{
+    width: 360px;
+    height: 91.7px;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+.logo-section{
+padding-top: 100px;
+width: 360px;
+}
+.bottom-content{
+    
+    height: 191.7px;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+.logo img{
+    width: 250.4px;
+    height: 66px;
+    padding-left: 35px;
+}
+ .icon{
+        padding-left: 150px;
+ }
+.copyright{
+        padding-left: 100px;
+        font-size: 18px;
+}
+}
+
